@@ -39,6 +39,7 @@ app = FastAPI(title="FAQFlow AI", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://faq-flow-ai-using-rag.onrender.com",
         "http://localhost:3000",
         "http://localhost:5173",
         "http://127.0.0.1:5500"
