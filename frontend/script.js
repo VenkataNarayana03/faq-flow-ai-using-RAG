@@ -5,7 +5,7 @@ const clearChat = document.querySelector("#clear-chat");
 const legacyInput = document.querySelector("#input");
 const legacyResponse = document.querySelector("#response");
 
-const apiUrl = 'http://127.0.0.1:8000/api/chat';
+const apiUrl = "https://faq-flow-ai-using-rag-1.onrender.com/api/chat";
 
 async function askFaqFlow(query) {
   const response = await fetch(apiUrl, {
@@ -37,7 +37,7 @@ if (form && input && messages) {
       const data = await askFaqFlow(query);
       updateMessage(thinking, data.answer);
     } catch (error) {
-      updateMessage(thinking, "Could not reach the backend.\n\nStart it with:\npython app/main.py");
+      updateMessage(thinking, "Could not reach the backend. Please try again in a moment.");
     } finally {
       input.disabled = false;
       input.focus();
@@ -58,7 +58,7 @@ async function send() {
     if (legacyResponse) legacyResponse.innerText = data.answer;
   } catch (error) {
     if (legacyResponse) {
-      legacyResponse.innerText = "Could not reach the backend. Start it with: python app/main.py";
+      legacyResponse.innerText = "Could not reach the backend. Please try again in a moment.";
     }
   }
 }
