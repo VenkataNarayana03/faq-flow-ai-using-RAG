@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pinecone
+datasets
+fastembed
+groq
+python-dotenv

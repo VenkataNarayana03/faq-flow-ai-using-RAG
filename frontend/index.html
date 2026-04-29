@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQFlow AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="chat-shell">
+      <header class="chat-header">
+        <div>
+          <h1>FAQFlow AI</h1>
+          <p>Customer support answers from your FAQ knowledge base</p>
+        </div>
+        <div class="header-actions">
+          <button id="clear-chat" class="clear-chat" type="button">Clear Chat</button>
+        </div>
+      </header>
+      <section id="messages" class="messages" aria-live="polite">
+        <article class="message bot">
+          <div class="avatar">F</div>
+          <div class="bubble">
+            <span class="author">FAQFlow</span>
+            <div class="content">Ask a customer support question to get a grounded answer.</div>
+          </div>
+        </article>
+      </section>
+      <form id="chat-form" class="chat-form">
+        <input id="message-input" type="text" placeholder="Ask a question..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
