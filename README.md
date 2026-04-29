@@ -2,8 +2,8 @@
 
 **FAQFlow AI** is a production-deployed, AI-powered chatbot that answers customer support questions using **Retrieval-Augmented Generation (RAG)**. Instead of relying purely on an LLM's training data, it retrieves the most relevant FAQ entries from a vector database and uses them as grounded context before generating an answer.
 
-> 🌐 **Live Demo:** Local App
-> 🔌 **Backend API:** `http://localhost:8000`
+> 🌐 **Live Demo:**  `https://faq-flow-ai-using-rag.onrender.com`
+> 🔌 **Backend API:** `https://faq-flow-ai-using-rag-1.onrender.com`
 
 ---
 
